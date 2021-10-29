@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+table * {
+    border: 1px solid rgb(92, 119, 141);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table tr:nth-child(2) th {
+    border: 2px solid rgb(74, 116, 35);
+}
+
+table tr:first-child {
+    background-color: white;
+    border-top:hidden;
+    border-left: hidden;
+    border-right: hidden;
+    color: red;
+    letter-spacing: 2px;
+}
+
+tr:nth-child(2n) {
+    background-color:rgb(195, 214, 235)
+}
+
+
+tr:nth-child(2n-1) {
+    background-color:rgb(115, 172, 233)
+}
+td:hover, th:hover {
+    background-color: rgb(226, 224, 224);
+    cursor: pointer;
+}
+tr:first-child th:hover {
+    background-color: unset;
+}

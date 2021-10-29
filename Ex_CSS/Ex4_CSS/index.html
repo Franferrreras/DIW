@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ej4.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend><i class="fas fa-user"></i></i>Datos personales</legend>
+            <p><label for="nombre">Nombre</label></p>
+            <p><input type="text" name="nombre" id="nombre" placeholder="Introduzca su nombre"></p>
+            <p><label for="apellidos">Apellidos</label></p>
+            <p><input type="text" name="apellidos" id="apellidos" placeholder="Introduzca sus apellidos"></p>
+            <p><label for="sexo">Sexo</label></p>
+            <p> 
+                <select id="sexo" name="sexo">
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend><i class="fas fa-birthday-cake"></i>Fecha de nacimiento</legend>
+            <input type="date" name="fecha_nac">
+        </fieldset>
+        <div class="idiomas">
+            <h4>Idiomas</h4> 
+            <p><input type="checkbox" name="castellano"><img src="img/espana.png" class="spain"><label for="castellano">Castellano </label></p>
+            <p><input type="checkbox" name="aleman"><img src="img/alemania.png"><label for="aleman">Aleman</label></p>
+            <p><input type="checkbox" name="ingles"><img src="img/reino-unido.png"><label for="ingles">Ingles</label></p>
+            <p><input type="checkbox" name="frances"><img src="img/francia.png"><label for="frances">Francia</label></p>
+        </div>
+        <fieldset>
+            <legend><i class="fas fa-comments"></i>Sugerencias</legend>
+            <textarea placeholder="Tiene alguna sugerencia?"></textarea>
+        </fieldset>
+    </div>
+</body>
+</html>

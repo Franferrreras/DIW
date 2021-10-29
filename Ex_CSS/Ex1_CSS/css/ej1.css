@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+
+
+header {
+    margin: 0px auto;
+    width: 60%;
+    text-align: center
+}
+header h1 {
+    margin: 0px auto;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+header ul li {
+    margin: 10px;
+    cursor:pointer;
+}
+
+header ul li:hover {
+    background-color:rgb(221, 71, 71);
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+}
+h1 {
+    cursor: pointer;
+}
+/*_______________________________________________________________*/
+
+article {
+    margin: 0px auto;
+    width: 65%;
+    border: 2px solid black;
+    padding:10px;
+}
+
+article section:first-child p {
+    text-indent: 40px;
+}
+
+.titulo {
+    background: rgb(235,235,246);
+    background: linear-gradient(180deg, rgba(235,235,246,0.8365546902354692) 0%, rgba(112,112,122,0.8225490879945728) 44%, rgba(110,110,122,0.8029412448573179) 57%, rgba(211,221,223,0.7777311608237045) 99%); 
+    font-weight: bolder;
+    cursor: pointer;
+}
+.titulo:hover {
+    color: white;
+}
+
+section ul {
+    list-style-image: url("../img/estrella.png");
+    cursor: pointer;
+    width: 33%;
+}
+section ul li:hover {
+    background-color: rgb(132, 164, 206);
+    color: white;
+}

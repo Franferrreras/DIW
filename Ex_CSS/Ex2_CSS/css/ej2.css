@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+table *{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+tr th:first-child {
+    background-color: rgb(186, 249, 253);
+}
+
+tr th:hover {
+    background-color: rgb(141, 141, 187);
+    cursor: pointer;
+}
+tr:first-child th:hover{
+    background-color: rgb(141, 141, 187);
+    cursor: pointer;
+}
+
+tr:first-child, tr:first-child th {
+    background-color: rgb(197, 197, 211);
+}
+
+tr:nth-child(2n) {
+    background-color: rgb(255, 220, 125);
+}
+
+td:hover {
+    background-color: rgb(141, 141, 187);
+    cursor: pointer;
+}
+
+td {
+    text-align: center;
+}
+
+img {
+    border: none
+}

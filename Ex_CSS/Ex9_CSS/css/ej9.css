@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2::first-letter {
+    font-size:1.5em;
+}
+
+h2 + p {
+    text-indent: 2em;
+}
+
+li:first-child {
+    background-color:rgb(255, 196, 0);
+}
+li:last-child {
+    background-color: grey;
+}
+
+li:nth-child(2n-1) {
+    border: dashed 1px pink;
+}
+
+a:before {
+    content: "→";
+}
+
+abbr {
+    position: relative;
+}
+    
+abbr:hover::after {
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    display: block;
+    padding: 1em;
+    background: rgb(240, 14, 70);
+    content: attr(title);
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+}

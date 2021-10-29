@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    width: 50%;
+    margin: 0px auto;
+}
+
+i {
+    margin-left: 3px;
+    margin-right: 3px;
+    color: rgb(71, 71, 71);
+}
+
+
+fieldset {
+    margin-bottom: 5px;
+    border: dashed 2px black; ;
+}
+fieldset:last-child {
+    margin-top: 5px;
+}
+
+fieldset , div {
+    background-color: rgb(232, 233, 233);
+}
+
+.idiomas {
+    margin-left: 5px;
+}
+p  {
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.idiomas h4 {
+    margin-bottom: 5px;
+}
+
+img {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+select {
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+legend {
+    font-weight: bolder;
+    color: rgb(14, 126, 255);
+}
+input[type="checkbox"] {
+    cursor: pointer;
+}
+.idiomas label:hover {
+    background-color: rgb(75, 75, 75);
+    color: white;
+}
+
