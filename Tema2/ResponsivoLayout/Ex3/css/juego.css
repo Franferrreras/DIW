@@ -1,0 +1,125 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: green;
+}
+.container {
+    width: 50%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(7,auto);
+    row-gap: 0.2rem;
+    column-gap: 0.2rem;
+    justify-content: center;
+}
+.container div {
+    width: 150px;
+    height: 200px;
+    background-color: rgb(109, 32, 32);
+    margin: 10px;
+    border-radius: 6px;
+    padding-bottom: 207px;
+    background-image: url(../img/unnamed.png);
+    background-size: 150px 207px;;
+    background-repeat: no-repeat;
+}
+
+.cart1 div {
+    margin: 3px 0px 0px 1px;
+    cursor: pointer;
+}
+.container .hiden {
+    background-color:transparent;
+    background:none;
+}
+.container .pri {
+    cursor: pointer;
+}
+.box div {
+    border: 1px solid white;
+    margin: 20px 0px 0px -2px;
+    cursor: pointer;
+}
+
+.box div:hover {
+    border: 2px solid rgb(255, 228, 110);
+    transform: rotate(0deg) scale(1.04)  translate(0px);
+}
+
+.container .trans {
+    background: none;
+    border: 3px solid rgb(194, 191, 191);
+}
+
+
+
+.container .img0 {
+    background-image: url(../img/9trebol.png);
+    background-size: 150px 209px;
+    
+}
+
+.container .img0:hover {
+    border: 2px solid rgb(255, 228, 110);
+    transform: rotate(0deg) scale(1.04)  translate(0px);
+}
+.container .img1 {
+    background-image: url(../img/Jrombo.jpg);
+    background-size: 150px 207px;
+}
+.container .img2 {
+    background-image: url(../img/7corazones.png);
+    background-size: 150px 207px;
+}
+.container .img3 {
+    background-image: url(../img/As_corazones.PNG);
+    background-size: 150px 207px;
+}
+
+.box .img3:active {
+    transform: translate(2px, -275px);
+}
+.container .img4 {
+    background-image: url(../img/qtrebol.png);
+    background-size: 150px 209px;
+}
+
+.container .img5 {
+    background-image: url(../img/10corazon.png);
+    background-size: 150px 209px;
+
+}
+.container .img6 {
+    background-image: url(../img/k.png);
+    background-size: 150px 207px;
+}
+
+.container .img0:active {
+    transform: translate(2px, -10px);
+}
+.container .img1:active , .container .img2:active, .container .img4:active, .container .img5:active, .container .img6:active {
+    transform: translate(2px, -10px);
+}
+
+.newcart:active {
+    background-image: url(../img/Qrombo.jpg);
+    transform: rotate(0deg) scale(1.1) skew(-180deg) translate(-2px);
+}
+
+
+.footer {
+    margin: 250px auto;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8em;
+    color: white;
+}
+
+.cart1 div:hover {
+    border: 2px solid rgb(255, 228, 110);
+    transform: rotate(0deg) scale(1.0009)  translate(0px);
+}
