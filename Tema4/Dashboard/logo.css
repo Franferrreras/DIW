@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    align-items: center;
+    font-size: 3.5em;
+    text-transform: uppercase;
+
+}
+
+img {
+    width: 5%;
+}
+
+.container div {
+    margin-left: 10px;
+}
+
+.paleta {
+    width: 200px;
+    height: 230px;
+    background-color: rgb(37, 71, 106);
+    display: flex;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 3px;
+    
+}
+
+.paleta div {
+    background-color: rgb(226, 218, 194);
+    width: 100%;
+    align-self: flex-end;
+}
+
+span {
+    margin-left: 20px;
+    font-size: .95rem;
+    color: rgb(44, 44, 44);
+}
+
+p {
+    font-size: .8rem;
+}
+
+
+h3, p {
+    margin: 5px;
+    color: rgb(73, 73, 73);
+}
+
+.paleta-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.back {
+    background-color: rgb(237, 237, 237);
+}
+
+.second {
+    background-color: hsl(0, 0%, 99%);
+}
+
+.warn {
+    background-color: #5c5c5c;
+}
