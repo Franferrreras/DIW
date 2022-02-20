@@ -1,0 +1,89 @@
+///@access public 
+///@author @Fran
+
+/// Establece el tiempo de duración
+/// de las animaciones
+/// @group time
+$duration: 10s !global;
+
+
+/// Mixin para establecer el padding y el margen a 0 y centrar el texto
+/// @group reset
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/// Mixin que centra los numeros que cargan.
+/// @group reset
+@mixin reset-load {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+
+}
+
+/// Mixin que establece dimensiones a las cajas
+/// @param {float} $width [100%] -- Establece el ancho de la caja
+/// @param {float} $height [50px] -- Establece el alto de la caja
+/// @group size
+@mixin size($width: 100%, $height: 50px) {
+
+}
+
+* {
+  @include reset;
+}
+
+.loader{
+  display: block;
+  position: relative;
+  background: #ffffff;
+  border:2px solid #fff;
+  height: 1rem;
+  width: 100%;
+  @include size($height: 50px);
+
+
+  &::before {
+    background-color: red;
+    @include reset-load;
+    @include size(0, $height: 100%);
+    animation: load $duration linear infinite;
+    padding: 20px;
+  }
+
+  &::after {
+    width: 100%;
+    font-size: 30pt;
+    color: yellow;
+    animation: text_load $duration linear infinite;
+    @include reset-load;
+    @include size(100%, 100%);
+  }
+}
+
+/// Animacion para la barra de carga
+/// @group animation 
+@keyframes load {
+  0%{ width: 0%; background-color: #ff2c2c;}
+  100%{ width: 100%;}
+}
+
+/// Animacion para animar el porcentaje de la barra de carga
+/// @group animation
+@keyframes text_load {
+  0%  {content: '0%';}   
+  10% {content: '10%';}  
+  20% {content: '20%';}  
+  30% {content: '30%';} 
+  40% {content: '40%';}  
+  50% {content: '50%';}  
+  60% {content: '60%';} 
+  70% {content: '70%';} 
+  80% {content: '80%';}  
+  90% {content: '90%';}  
+  100%{content: '100%';}
+}

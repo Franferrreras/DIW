@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAEA,AACI,GADD,CACC,EAAE,CAAC;EACC,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,IAAI;CAEnB;;AANL,AAOI,GAPD,CAOC,EAAE,CAAC;EACC,OAAO,EAAE,YAAY;EACrB,KAAK,EAJC,IAAI;CAKb;;AAVL,AAWI,GAXD,CAWC,CAAC,CAAC;EACE,OAAO,EAAE,KAAK;EACd,OAAO,EAAE,QAAQ;EACjB,eAAe,EAAE,IAAI;CACxB",
-    "sources": [
-        "Transformar_Sass_CSS.scss"
-    ],
-    "names": [],
-    "file": "Transformar_Sass_CSS.css"
-}

@@ -1,0 +1,63 @@
+///@access public 
+///@author @Fran
+
+/// India el número máximo de columnas
+/// @group size 
+$MAX_COLUMNS: 4 !default;
+
+/// Resoluciones de pantallas
+/// Mapa clave valor de las relociones de pantalla
+/// @group columns
+$RESPONSIVE_COLUMNS: (1024px: 3, 768px: 2, 480px: 1, );
+
+
+///@group columns
+///@param {int} $n - Valor que indica el numero de columnas
+///@return {float}
+///@example scss - Función grid_column
+///
+@function grid_columns($n) {
+    @if ($n > 0) {
+        @return ((100 / $n) * 1%);
+    }
+    
+    @else {
+        @return 0;
+    }
+}
+
+/// Mixin para reescalar las imagenes 
+/// @group size
+/// @param {integer} $n -- Tamaño de la imagen del 1 al 4
+@mixin resize($n) {
+
+    .gallery img {
+        width: grid_columns($n);
+    }
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.gallery {
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+}
+
+
+@include resize(4);
+
+
+
+@each $size, $value in $RESPONSIVE_COLUMNS {
+
+    @media (max-width: $size) {
+        @include resize($value);
+    }
+}
